@@ -3,7 +3,7 @@
 ## synchronized
 1. synchronized 是互斥锁
     - 对象被加锁之后，只有当synchronized代码块的内容执行完成后，才会释放锁
-2. synchronized 锁定的是一个对象
+2. synchronized 锁定的是一个对象 锁的信息是再堆里面
     - synchronized 锁代码块说法是错误的
 3. 可以形象的理解成厕所的锁
 4. 一个 `synchronized` 代码块 想当于一个原子操作
@@ -53,6 +53,10 @@ read 和 write 对应
 load -> use -> assign -> store
 
 ```
+
+## 生产者消费者模型
+1. synchronized wait notify notifyAll 一起使用
+2. ReentrantLock 的 Promise 
 
 
 

@@ -1,0 +1,25 @@
+1. 对于Map/Set的选择使用
+HashMap
+TreeMap
+LinkedHashMap
+
+Hashtable
+Collection.synchronizedXXX
+
+ConcurrentHashMap
+ConcurrentSkipHashMap
+
+
+2. 队列
+ArrayList
+LinkedList
+Collection.synchronizedXXX
+CopyOnWriteList 事件监听
+Queue
+    ConcurrentLinkedQueue
+    BlockedQueue[重点]
+        LinkedBlockingQueue 无界
+        ArrayBlockingQueue 有界
+        TransferQueue 立即消费
+        SynchronousQueue 容量为0，立即消费
+    DelayQueue<E extends Delayed> 定时任务
