@@ -78,7 +78,7 @@ public class MyContainer1<T> {
         for (int i = 0; i < 2; i++) {
             new Thread(() -> {
                 while (true) {
-                    System.out.println(myContainer1.get());
+                    System.out.println("consumer: " + Thread.currentThread().getName() + " " + myContainer1.get());
                     try {
                         TimeUnit.SECONDS.sleep(1);
                     } catch (InterruptedException e) {
